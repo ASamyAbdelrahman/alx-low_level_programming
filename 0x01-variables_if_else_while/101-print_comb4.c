@@ -30,7 +30,7 @@ int main(void)
 					putchar(' ');
 				}
 			}
-			j++
+			j++;
 		}
 		z++;
 		i++;
