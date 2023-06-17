@@ -29,11 +29,11 @@ int main(void)
 					putchar(',');
 					putchar(' ');
 				}
-				j++;
 			}
-			z++;
-			i++;
+			j++
 		}
+		z++;
+		i++;
 	}
 		putchar('\n');
 		return (0);
