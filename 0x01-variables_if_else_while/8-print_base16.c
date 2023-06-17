@@ -10,7 +10,7 @@ int main(void)
 	char ch;
 
 	n = 48;
-	char = 'a';
+	ch = 'a';
 	while (n <= 57)
 	{
 		putchar(n);
