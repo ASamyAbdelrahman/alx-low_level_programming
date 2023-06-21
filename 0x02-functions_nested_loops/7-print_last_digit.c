@@ -4,11 +4,14 @@
  *
  * @digit: checks the input of the function
  *
- * Return: returns digit % 10
+ * Return: returns last_digit
  */
 
 int print_last_digit(int digit)
 {
-	_putchar('digit % 10');
-	return (digit % 10);
+	int last_digit;
+
+	last_digit = digit % 10;
+	_putchar('last_digit');
+	return (last_digit);
 }
