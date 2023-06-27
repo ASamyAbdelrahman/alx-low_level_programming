@@ -3,23 +3,19 @@
 /**
  * _strlen - a function that returns the length of a string.
  * @s: the input of the function.
- * Return: returns value.
+ * Return: returns lenght.
  */
 
 int _strlen(char *s)
 {
-	int value, i;
+	int length;
 
-	for (i = 0; *(s + i) != '\0'; i++)
+	length = 0;
+	while (*s != '\0')
 	{
-		if (*(s + i) >= 32 || *(s + i) <= 127)
-			value = i + 1;
-		else
-			{
-				value = 0;
-				break;
-			}
+		length++;
+		(s **);
 	}
 
-	return (value);
+	return (length);
 }
