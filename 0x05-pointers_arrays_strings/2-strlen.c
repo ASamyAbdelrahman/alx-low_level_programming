@@ -10,7 +10,7 @@ int _strlen(char *s)
 {
 	int value;
 
-	value = sizeof(*s);
+	value = sizeof(s);
 
 	return (value);
 }
