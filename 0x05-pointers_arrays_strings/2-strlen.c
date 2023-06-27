@@ -3,13 +3,14 @@
 /**
  * _strlen - a function that returns the length of a string.
  * @s: the input of the function.
+ * Return: returns value.
  */
 
 int _strlen(char *s)
 {
 	int value;
 
-	value = sizeof(*s) / sizeof(*(s + 1));
+	value = sizeof(*s);
 
 	return (value);
 }
