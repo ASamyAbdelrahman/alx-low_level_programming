@@ -10,31 +10,21 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-	int length, i;
+	int counter;
 	char *y = dest;
 
-	i = 0;
-	length = 0;
+	counter = 0;
 	while (*y != '\0')
 	{
 		++y;
-		length++;
 	}
-	if (n >= 98 - length)
+	while (*src != '\0' && counter < n)
 	{
-		for (i = 0; i < 98 - length; i++)
-		{
-			*y = src[i];
-			y++;
-		}
+		*y = *src;
+		++src;
+		++y;
+		++counter;
 	}
-	else
-	{
-		for (i = 0; i < n; i++)
-		{
-			*y = src[i];
-			y++;
-		}
-	}
+	*y = '\0';
 	return (dest);
 }
