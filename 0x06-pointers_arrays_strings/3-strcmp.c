@@ -13,7 +13,15 @@ int _strcmp(char *s1, char *s2)
 
 	value = 0;
 	i = 0;
-	value = s1[i] - s2[i];
+	if (s1[i] == '\0' && s2[i] != '\0')
+		value = s2[i];
+	else if (s2[i] == '\0' && s1[i] != '\0')
+		value = s1[i];
+	else if (s1[i] == '\0' && s2[i] == '\0')
+		value = 0;
+	else if (s1[i] != '\0' && s2[i] != '\0')
+		value = s1[i] - s2[i];
+
 	return (value);
 }
 
