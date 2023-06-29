@@ -20,7 +20,7 @@ char *_strncat(char *dest, char *src, int n)
 		++y;
 		length++;
 	}
-	if (n > 98 - length)
+	if (n >= 98 - length)
 	{
 		for (i = 0; i < 98 - length; i++)
 		{
