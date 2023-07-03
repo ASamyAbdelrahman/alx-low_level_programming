@@ -5,7 +5,7 @@
  * @dest: the first input of the function.
  * @src: the second input of the function.
  * @n: the third input of the function.
- * @Return: retunrs dest.
+ * Return: retunrs dest.
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
