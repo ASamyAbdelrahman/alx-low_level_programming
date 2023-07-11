@@ -14,6 +14,7 @@ char *_strdup(char *str)
 	char *y = str;
 	char *ptr;
 
+	length = 0;
 	while (*y != '\0')
 	{
 		y++;
