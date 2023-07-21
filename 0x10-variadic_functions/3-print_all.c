@@ -3,18 +3,18 @@
 #include "variadic_functions.h"
 /**
  * print_i - prints int
- * @list: arguement of list
+ * @ap: arguement of list
  * @s: seperator
  * Return: none
  */
 void print_i(char *s, va_list ap)
 {
-	printf("%s%d", s, va_arg(ap , int));
+	printf("%s%d", s, va_arg(ap, int));
 }
 /**
  * print_c - prints char
- * @list: arguement char
- * @sep: seperator
+ * @ap: arguement char
+ * @s: seperator
  */
 void print_c(char *s, va_list ap)
 {
@@ -22,8 +22,8 @@ void print_c(char *s, va_list ap)
 }
 /**
  * print_s - prints string
- * @sep: seperator
- * @list: list to print
+ * @s: seperator
+ * @ap: list to print
  * Return: none
  */
 void print_s(char *s, va_list ap)
@@ -37,8 +37,8 @@ void print_s(char *s, va_list ap)
 }
 /**
  * print_f - prints floats
- * @sep: float to print
- * @list: next arguement of list to print
+ * @s: float to print
+ * @ap: next arguement of list to print
  * Return: none
  */
 void print_f(char *s, va_list ap)
