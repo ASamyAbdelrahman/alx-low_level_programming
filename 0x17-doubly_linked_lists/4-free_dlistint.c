@@ -3,18 +3,18 @@
 /**
  * free_dlistint - frees a dlistint_t list.
  * @head: the head of list
+ * Return: no return
  */
 void free_dlistint(dlistint_t *head)
 {
 	dlistint_t *h;
 
-	h = head;
 	if (head != NULL)
 	{
 		while (head->prev != NULL)
 			head = head->prev;
 	}
-	while (h != NULL)
+	while ((h = head) != NULL)
 	{
 		head = head->next;
 		free(h);
